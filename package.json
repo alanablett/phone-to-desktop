@@ -1,0 +1,11 @@
+{
+    "name": "PhoneToWeb",
+    "version": "1.0.0",
+    "description": "Control the browser with your phone",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "ejs": "latest"
+    },
+    "author": "Alan Ablett"
+}
