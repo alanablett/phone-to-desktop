@@ -1,14 +1,16 @@
 window.onload = function() {
     
     var socket = io.connect('http://localhost:8082');
-    var content = document.getElementById("content");
     
     // Let the server know we're connected
     socket.emit('desktop.connect');
     
     // Once connected we listen for the server to call back with our unique string (this'll be used by the mobile)
     socket.on('desktop.callback', function( data ){
-        content.innerHTML = data.url;
+        var urlPlaceholder = $("#url");
+        var fullUrl = 'http://localhost:8082/' + data.url;
+        var anchor = $('<a>').attr('href', fullUrl).text(fullUrl);
+        urlPlaceholder.html('Navigate to the following url with your other device/browser to control this window').append(anchor);
     });
     
     // When our mobile pushes data up the server it will fire off a desktop move call to the appropriate socket.io client

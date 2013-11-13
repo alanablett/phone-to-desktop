@@ -1,5 +1,5 @@
 {
-    "name": "Phone To Desktop",
+    "name": "phone-to-desktop",
     "version": "1.0.0",
     "description": "Control the connected browser with your phone",
     "dependencies": {
