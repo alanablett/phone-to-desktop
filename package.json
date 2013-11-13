@@ -1,7 +1,7 @@
 {
-    "name": "PhoneToWeb",
+    "name": "Phone To Desktop",
     "version": "1.0.0",
-    "description": "Control the browser with your phone",
+    "description": "Control the connected browser with your phone",
     "dependencies": {
         "socket.io": "latest",
         "express": "latest",
